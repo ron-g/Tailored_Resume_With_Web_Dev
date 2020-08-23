@@ -21,7 +21,7 @@ This tool is intended to make it easier to re-order and/or in/ex -clude  items t
 
 My host platform is Ubuntu Server. The web server is Apache, with PHP enabled. I configured a new VirtualHost running on HTTPS with an SSL certificate from LetsEncrypt. I have personally identifiable information in my resume, so I password protect it with the `htpasswd` utility. I also limit it to connections from specific IP addresses. When I’m not exporting resumes, I disable the VirtualHost with `a2dissite`. One could leave a resume visible and redact the PII.
 
-My workstation is Windows 10. So that I can use a GUI text editor (Notepad++ or Sublime Text) when making many edits, I use MountainDuck SFTP with the root folder being the VirtualHost DocumentRoot folder. MountainDuck is not free. There is a trial version. To remain completely free, one could use `nano` via SSH, and re-order with `Ctrl`+`K`/`Ctrl`+`U` to cut and paste one or more items. Pro tip, if editing exclusively via SSH, use `tmux` to open multiple windows in the SSH session and bounce between the windows with `BindKey`+[`n`,`p`,`#`].
+My workstation is Windows 10. So that I can use a GUI text editor (Notepad++ or Sublime Text) when making many edits, I use MountainDuck SFTP with the root folder being the VirtualHost DocumentRoot folder. MountainDuck is not free. There is a trial version. To remain completely free, one could use `nano` via SSH, and re-order with `Ctrl`+`K`/`Ctrl`+`U` to cut and paste one or more items. Pro tip, if editing exclusively via SSH, use `tmux` to open multiple windows (`BindKey`+`c`) in the SSH session and bounce between the windows with `BindKey`+[`n`,`p`,`#`].
   
 ## CSS styles
 
@@ -40,7 +40,9 @@ The `table` header section of the table (`th`) defines the width of each table c
 The first row of the table has your name and extra info. The name is in a `div` that is centered in the `td`. The optional and extra contact info is in another `div` that is pinned to the right and stacked higher (`z-index` property). If you have this publicly viewable, you may not want your PII included. As I mentioned above, I don’t have this publicly viewable all the time, so I leave the PII in place, export the PDFs as needed, then stop the VirtualHost.
 
 With respect to the PII, in my resume, I have telephone embedded as
-  `<a target='_blank' href='tel:+15555552160'>&#9742; 555-555-2160</a>`
+
+`<a target='_blank' href='tel:+15555552160'>&#9742; 555-555-2160</a>`
+
 so that a person viewing on a phone can press the phone number to call me directly. Similarly, the address is embedded as a link that opens Google maps on an Android device.
 
 The extra (SFW) social media pieces are embedded as hyperlinks where the clickable item is the site’s “favicon.ico” image limited to 16x16 pixels.
@@ -84,13 +86,13 @@ In the subsequent `foreach` loop, the job title, employer, location, and dates a
 Regardless of how the bulleted list is written to the media, the power of this tool is illustrated by the quick ability to change the order of the duty/highlight array with 
 - `Ctrl`+`Shift`+`↑`/`↓` in Notepad++ and Sublime Text with one or more lines selected
 - `Ctrl`+`K` on one or more lines to cut, then `Ctrl`+`U` to paste in nano
-- Yank (`yy`), delete (`dd`), and paste/put (`p`) operations in `vi`(`m`).
+- Yank (`yy`), delete (`dd`), and paste/put (`p`) operations in `vim`
 
 and un/commenting items with
 - `Ctrl`+`k` to comment `Ctrl`+`Shift`+`k` to uncomment in Notepad++
 - `Ctrl`+`/` to toggle comment in Sublime Text
 - `Meta`+`3` to toggle comment in `nano`
-- I wish you the best in `vi`(`m`)
+- I wish you the best in `vim`
 
 Save the PHP file when the items have been rearranged and/or un/commented.
 
