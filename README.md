@@ -41,7 +41,9 @@ The first row of the table has your name and extra info. The name is in a `div` 
 
 With respect to the PII, in my resume, I have telephone embedded as
 
-`<a target='_blank' href='tel:+15555552160'>&#9742; 555-555-2160</a>`
+```html
+<a target='_blank' href='tel:+15555552160'>&#9742; 555-555-2160</a>
+```
 
 so that a person viewing on a phone can press the phone number to call me directly. Similarly, the address is embedded as a link that opens Google maps on an Android device.
 
