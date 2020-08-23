@@ -1,0 +1,79 @@
+body {
+	font: 12pt Arial;
+}
+
+table {
+	width: 100%;
+	/*margin-right: 1%;*/
+	/*margin-left: 1%;*/
+}
+
+table, tr, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+div {
+	/*margin: 1% 2%;*/
+	/*border: 1px solid black;*/
+}
+
+.td_contact {
+	/*float: left;*/
+	/*width: 95%;*/
+	/*position: absolute;*/
+	/*border: 1px solid black;*/
+	text-align: right ;
+	font-size: 0.75em ;
+	vertical-align: middle;
+	position: relative;
+	top: 0px;
+	right: 0px;
+	margin: 0px 0px !important;
+	z-index: 2;
+}
+
+.td_name {
+	/*float: right;*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/*border: 1px solid black;*/
+	text-align: center;
+	font-size: 3em;
+	font: Arial Black;
+	font-weight: bold;
+	vertical-align: middle;
+	margin: 0px 0px !important;
+	z-index: 1;
+}
+
+/*.div_header {
+	position: relative;
+}
+
+.div_objective {
+	position: relative;
+}
+
+.div_work {
+	position: relative;
+}
+
+.div_education {
+	position: relative;
+}
+
+.div_training {
+	position: relative;
+}
+
+.div_skills {
+	position: relative;
+}
+
+.div_successes {
+	position: relative;
+}
+
+*/
