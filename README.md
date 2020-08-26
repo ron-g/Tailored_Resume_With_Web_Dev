@@ -5,7 +5,7 @@ Use HTML, PHP, and CSS to create a tailored resume.
 
 ## Acknowledgements
 
-Thank you to Jason Blanchard and his wife Jackie for encouraging me to document this utility.
+Thank you to Jason Blanchard and his wife Jacque for encouraging me to document this utility.
 
 When I was losing my job in June 2020, someone in the Black Hills Info Sec or TrustedSec discord told me about the “IRL Job Hunt” Jason (and sometimes Jackie) conducts on Twitch twice per week. I mentioned in the stream comments that I had recently switched from using a spreadsheet to make resumes targeted to a company I was applying to in favor of a web product that makes re-ordering items and en/dis -abling line items much easier. They pushed me to document the tool.
 
